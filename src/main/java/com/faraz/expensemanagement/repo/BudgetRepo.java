@@ -1,0 +1,1 @@
+package com.faraz.expensemanagement.repo; import com.faraz.expensemanagement.entity.*; import java.util.*; import org.springframework.data.jpa.repository.*; public interface BudgetRepo extends JpaRepository<Budget,Long>{List<Budget> findByUser(User u);Optional<Budget> findByIdAndUser(Long id,User u);}

@@ -1,0 +1,1 @@
+package com.faraz.expensemanagement.repo; import com.faraz.expensemanagement.entity.User; import java.util.*; import org.springframework.data.jpa.repository.*; public interface UserRepo extends JpaRepository<User,Long>{Optional<User> findByEmailIgnoreCase(String e); boolean existsByEmailIgnoreCase(String e);}

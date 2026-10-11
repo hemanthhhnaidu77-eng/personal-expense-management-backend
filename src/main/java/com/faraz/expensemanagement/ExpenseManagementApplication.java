@@ -1,0 +1,1 @@
+package com.faraz.expensemanagement; import org.springframework.boot.*; import org.springframework.boot.autoconfigure.*; @SpringBootApplication public class ExpenseManagementApplication{public static void main(String[]a){SpringApplication.run(ExpenseManagementApplication.class,a);}}

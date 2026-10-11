@@ -1,0 +1,1 @@
+package com.faraz.expensemanagement.repo; import com.faraz.expensemanagement.entity.*; import java.util.*; import org.springframework.data.jpa.repository.*; public interface CatRepo extends JpaRepository<Category,Long>{List<Category> findByUser(User u);Optional<Category> findByIdAndUser(Long id,User u);}
